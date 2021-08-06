@@ -1,0 +1,14 @@
+
+sudo apt-get install vim
+sudo apt-get install curl
+sudo apt-get install git
+
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo npm install -g npm
+
+mkdir www
+cd www
+git clone https://github.com/hakii6/react_uma
+cd react_uma
+npm install

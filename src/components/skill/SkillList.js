@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useCallback  } from 'react';
-import { DataContext } from '../../data-context';
+import DataContext from '../../DataContext';
 
 import _ from 'lodash';
 
@@ -71,12 +71,10 @@ function Skills() {
       <table>
         <thead></thead>
         <tbody>
-        { 
+{/*        { 
           skills && 
-          skills
-            .filter((skill)=> (skill.tag.phase === option.phase || skill.tag.phase_random === option.phase) && skill.tag.running_style === option.running_style)
-            .map((skill) => <SkillItem key={skill.id} skill={skill} />) 
-        }
+          skills.map((skill) => <SkillItem key={skill.id} skill={skill} />) 
+        }*/}
         </tbody>
       </table>
     </div>
@@ -84,3 +82,5 @@ function Skills() {
 }
 
 export default Skills;
+
+//             .filter((skill)=> (skill.tag.phase === option.phase || skill.tag.phase_random === option.phase) && skill.tag.running_style === option.running_style)

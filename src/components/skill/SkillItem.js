@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
 const SkillItem = (props) => {
-  const {skill} = props;
-  const [skill, setSkill] = useState(propSkill);
+  const [skill, setSkill] = useState(props);
 
   const gradeRate = () => (!(skill.need_skill_point) || (skill.need_skill_point == -1) ? 0 : (skill.grade_value / skill.need_skill_point).toFixed(2));
 
